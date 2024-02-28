@@ -69,3 +69,6 @@ I evaluated the processing speed of these six questions in several stages and th
 
 You can use this code for speed testing  :
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1amGO0apUdK4MTWU3NpUp752YMl5FlBX-?usp=sharing)
+
+## Suggestion to speed up
+In this code, we used the language model locally, and the faster method is to use server-based models, such as using HoggingFace endpoint APIs, which will give us a much higher speed.
