@@ -48,14 +48,16 @@ I asked the trained model six sentences that fit the data, and the results were 
 |  :---:  | :---:  | 
 | How many calories does the Colonel have? | The Colonel refers to the Colonel Burger and Colonel Stacker items in this context. Each of these items has a nutritional information object with a calorie count of 150. Therefore, the Colonel has a total of 150 calories (for one item). Since the question doesn't ask for the number of calories for multiple items or meals, the answer is simply "The Colonel has 150 calories." or "150 calories" if spoken out loud.   | 
 
+You can use this code for testing :
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1vZZ4KKRIWDwCyJDLFoN9Qu6ld27mTEa0?usp=sharing)
+
 ## Test Time
 I evaluated the processing speed of these six questions in several stages and the result is reported in the table below
 | Question |Processing Time   |
 |  :---:  |  :---: | 
 | Can I get a Whopper? | 2.56 s ± 340 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)  | 
 |  :---:  | :---:  | 
-| Give me a Veggie Tender, medium, with salad | The slowest run took 5.31 times longer than the fastest. This could mean that an intermediate result is being cached.
-16.3 s ± 7.24 s per loop (mean ± std. dev. of 7 runs, 1 loop each)  | 
+| Give me a Veggie Tender, medium, with salad | The slowest run took 5.31 times longer than the fastest. 16.3 s ± 7.24 s per loop (mean ± std. dev. of 7 runs, 1 loop each) | 
 | :---:  | :---:  | 
 | Hi, do you have cola? | 3.85 s ± 314 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)  | 
 |  :---:   | :---:  | 
@@ -65,3 +67,5 @@ I evaluated the processing speed of these six questions in several stages and th
 |  :---:  | :---:  | 
 | How many calories does the Colonel have? | 1.5 s ± 121 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)  | 
 
+You can use this code for speed testing  :
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1amGO0apUdK4MTWU3NpUp752YMl5FlBX-?usp=sharing)
