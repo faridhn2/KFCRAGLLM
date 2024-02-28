@@ -20,7 +20,7 @@ if __name__ == '__main__':
     print(kfc_rag.query('Give me an orange chocolate milkshake, medium'))
 ```
 You can use this code :
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/144w89-CQuYm-Y-zkDQINK-MTBTMxT1jV?usp=sharing]
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/144w89-CQuYm-Y-zkDQINK-MTBTMxT1jV?usp=sharing)
 
 ## Dependencies
 * PyTorch
@@ -36,15 +36,32 @@ You can use this code :
 I asked the trained model six sentences that fit the data, and the results were excellent in all six cases, which can be seen in the table below.
 | Question |Response   |
 |  :---:  |  :---: | 
-| Can I get a Whopper? | No, you cannot get a Whopper at KFC as it is a different fast food chain from Burger King, where the Whopper is sold.   | 
+| Can I get a Whopper? | No, there is no Whopper option on this menu. The options available are the Original Burger Boxmeal (M27), Colonel Burger Meal (M9), and another Original Burger Meal (M12).  | 
 |  :---:  | :---:  | 
-| Give me a Veggie Tender, medium, with salad | Based on the given menu codes and contents, the Veggie Tender meal comes with a Veggie Tender (V2), a large drink from the Drinks section, and one side dish chosen from the Side dishes section. However, the question asks for a medium Veggie Tender instead of a large one. Unfortunately, there is no information provided in the context about the size options for the Veggie Tender itself. Therefore, I cannot provide a definitive answer to the question as it is currently stated. If more information were available about the size options for the Veggie Tender, I would be happy to help construct an order based on that information. As it stands, I can only suggest ordering a Veggie Tender meal with a medium Veggie Tender if such an option exists. Additionally, the question asks for a salad as a side dish, but the context does not specify which side dish is included in the Veggie Tender meal. Again, if more information were available, I could provide a more complete answer. But based on the context given, I can only recommend ordering a Veggie Tender meal with a medium Veggie Tender and asking for a salad as a side dish, assuming that those options are available.   | 
+| Give me a Veggie Tender, medium, with salad | Based on the given menu codes and items, the correct order would be "M20" for the menu code which includes a Veggie Tender as one of its options, followed by "choosing 1 side dish" which could be a salad, and specifying the size as "medium" for the Veggie Tender itself. Therefore, the final order would be "M20, choose 1 from Side dishes (salad), medium Veggie Tender". The total price for this order would be $30.00.   | 
 | :---:  | :---:  | 
-| Hi, do you have cola? | No, you cannot get a Whopper at KFC as it is a different fast food chain from Burger King, where the Whopper is sold.   | 
+| Hi, do you have cola? | Yes, we have Pepsi with a code D2 and it costs $2.8. However, it is currently not available.   | 
 |  :---:   | :---:  | 
-| Can I get a Whopper? | No, you cannot get a Whopper at KFC as it is a different fast food chain from Burger King, where the Whopper is sold.   | 
+| Give me an orange chocolate milkshake, medium | I'm sorry, neither of the given items match your request for an orange chocolate milkshake, medium. The first item is a Chocolate Sundae with no size or type specified and the second item is plain Ice Cream also without any size or type specified. To order an orange chocolate milkshake, medium, you would need to check if it's available on the menu and then place an order for it accordingly.   | 
 |  :---:   | :---:  | 
-| Can I get a Whopper? | No, you cannot get a Whopper at KFC as it is a different fast food chain from Burger King, where the Whopper is sold.   | 
+| Give me the gluten free burger options | Based on the provided information, there are no gluten-free burger options available as all burgers listed have allergens that include wheat or soy.  | 
 |  :---:  | :---:  | 
-| Can I get a Whopper? | No, you cannot get a Whopper at KFC as it is a different fast food chain from Burger King, where the Whopper is sold.   | 
+| How many calories does the Colonel have? | The Colonel refers to the Colonel Burger and Colonel Stacker items in this context. Each of these items has a nutritional information object with a calorie count of 150. Therefore, the Colonel has a total of 150 calories (for one item). Since the question doesn't ask for the number of calories for multiple items or meals, the answer is simply "The Colonel has 150 calories." or "150 calories" if spoken out loud.   | 
+
+## Test Time
+I evaluated the processing speed of these six questions in several stages and the result is reported in the table below
+| Question |Processing Time   |
+|  :---:  |  :---: | 
+| Can I get a Whopper? | 2.56 s ± 340 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)  | 
+|  :---:  | :---:  | 
+| Give me a Veggie Tender, medium, with salad | The slowest run took 5.31 times longer than the fastest. This could mean that an intermediate result is being cached.
+16.3 s ± 7.24 s per loop (mean ± std. dev. of 7 runs, 1 loop each)  | 
+| :---:  | :---:  | 
+| Hi, do you have cola? | 3.85 s ± 314 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)  | 
+|  :---:   | :---:  | 
+| Give me an orange chocolate milkshake, medium | 4.63 s ± 1.68 s per loop (mean ± std. dev. of 7 runs, 1 loop each)  | 
+|  :---:   | :---:  | 
+| Give me the gluten free burger options | 3.4 s ± 1.02 s per loop (mean ± std. dev. of 7 runs, 1 loop each)  | 
+|  :---:  | :---:  | 
+| How many calories does the Colonel have? | 1.5 s ± 121 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)  | 
 
