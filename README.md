@@ -35,11 +35,11 @@ You can use this code :
 ## Test 
 I asked the trained model six sentences that fit the data, and the results were excellent in all six cases, which can be seen in the table below.
 | Question |Response   |
-| :---:   | :---: | 
+| ---   | --- | 
 | Can I get a Whopper? | No, you cannot get a Whopper at KFC as it is a different fast food chain from Burger King, where the Whopper is sold.   | 
-| :---:   | :---: | 
+| ---   | --- | 
 | Give me a Veggie Tender, medium, with salad | Based on the given menu codes and contents, the Veggie Tender meal comes with a Veggie Tender (V2), a large drink from the Drinks section, and one side dish chosen from the Side dishes section. However, the question asks for a medium Veggie Tender instead of a large one. Unfortunately, there is no information provided in the context about the size options for the Veggie Tender itself. Therefore, I cannot provide a definitive answer to the question as it is currently stated. If more information were available about the size options for the Veggie Tender, I would be happy to help construct an order based on that information. As it stands, I can only suggest ordering a Veggie Tender meal with a medium Veggie Tender if such an option exists. Additionally, the question asks for a salad as a side dish, but the context does not specify which side dish is included in the Veggie Tender meal. Again, if more information were available, I could provide a more complete answer. But based on the context given, I can only recommend ordering a Veggie Tender meal with a medium Veggie Tender and asking for a salad as a side dish, assuming that those options are available.   | 
-| :---:   | :---: | 
+| ---  | --- | 
 | Hi, do you have cola? | No, you cannot get a Whopper at KFC as it is a different fast food chain from Burger King, where the Whopper is sold.   | 
 | :---:   | :---: | 
 | Can I get a Whopper? | No, you cannot get a Whopper at KFC as it is a different fast food chain from Burger King, where the Whopper is sold.   | 
